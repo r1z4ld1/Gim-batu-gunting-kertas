@@ -1,0 +1,141 @@
+:root {
+    box-sizing: border-box;
+}
+
+html, body, * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1a2727;
+}
+
+#app {
+    height: 100vh;
+}
+
+.konten {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    border: 3px solid blanchedalmond;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background-color: #1b080e;
+    color: white;
+    border: 4px solid #650a29;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opsi {
+    width: 30%;
+    margin: 10px 15px;
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+    box-sizing: border-box;
+    transition: 0,3s;
+}
+
+.opsi.kertas {
+    background-color: #03a9f4;
+}
+
+.opsi.gunting {
+    background-color: #f44336;
+}
+
+.opsi.batu {
+    background-color: #673ab7;
+}
+
+.konten:hover {
+    transform: scale(110%);
+}
+
+.opsi:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: #1b080e;
+    transition: 0.3s;
+    border: 4px solid #c81572;
+    box-shadow: inset 0 0 20px #000;
+}
+
+.opsi:hover span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    display: none;
+}
+
+.opsi:active {
+    transform: scale(100%);
+    filter: brightness(30%);
+}
+
+button {
+    padding: 10px 5px;
+    margin: 15px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+    border: none;
+    width: 70px;
+}
+
+.ulang {
+    width: 80px;
+    margin: 15px auto;
+}
+
+button:active {
+    filter: brightness(70%);
+    transform: scale(90%);
+}
+
+#tampilNama {
+    text-transform: uppercase;
+}
+
+.game-over {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+img {
+    margin: 20px auto;
+    width: 175px;
+} 
+
